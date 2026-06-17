@@ -44,6 +44,7 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     transition: all 0.3s ease;
+    justify-content: center; 
   }
 
   .nav-logo {
@@ -218,8 +219,8 @@
   }
 
   .hero-img-placeholder {
-    width: 360px;
-    height: 420px;
+    width: 500px;
+    height: 500px;
     border-radius: 12px;
     background: (rgb(241, 221, 221));
     border: 2px dashed rgba(255, 255, 255, 0.4);
@@ -426,7 +427,7 @@
     color: var(--orange);
     position: relative;
     overflow: hidden;
-    max-width: 340px;
+    max-width: 500px;
   }
 
   .about-img-placeholder::before {
@@ -472,6 +473,9 @@
     color: var(--light);
     margin-top: 0.2rem;
   }
+  .highlight-item:nth-child(3) {
+  grid-column: 1 / -1;
+   }
 
   /* ======== SKILLS ======== */
   #skills {
@@ -480,7 +484,7 @@
 
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
     gap: 1.25rem;
     margin-top: 3rem;
   }
@@ -724,7 +728,7 @@
     color: var(--orange);
     overflow: hidden;
     position: relative;
-    max-width: 380px;
+    max-width: 500px;
     margin: 0 auto;
   }
 
@@ -1125,9 +1129,8 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo"><a>
   <ul class="nav-links">
-   <li><a href="#home">Home</a></li>
+   <li><a href="#hero">Home</a></li>
    <li><a href="#about">About</a></li>
    <li><a href="#myservices">Services</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -1147,9 +1150,9 @@
     <h1 class="hero-title">
       <span class="name">Girisha</span> Kawatra
     </h1>
-    <p class="hero-subtitle">Marketing Portfolio</p>
+    <p class="hero-subtitle">Portfolio</p>
     <p class="hero-desc">
-      MBA candidate building campaigns that move people, from 900K+ developer touchpoints to brand strategy that turns insight into impact.
+    MBA candidate building campaigns that move people, blending data-led optimization with brand storytelling.
       <br><br>
       Where data <em>meets</em> storytelling.
     </p>
@@ -1166,12 +1169,12 @@
         <div class="label">Developer Touchpoints</div>
       </div>
       <div class="stat-item">
-        <div class="num">7x</div>
+        <div class="num">5%</div>
         <div class="label">Engagement Lift</div>
       </div>
       <div class="stat-item">
-        <div class="num">2+</div>
-        <div class="label">Years Managing</div>
+        <div class="num">3+</div>
+        <div class="label">Years of experience in Marketing</div>
       </div>
     </div>
   </div>
@@ -1210,42 +1213,42 @@
 <!-- SERVICES / WHAT I DO -->
 <section id="myservices">
   <div class="fade-in">
-    <span class="section-label">What I Do</span>
+    <span class="section-label">What I Do?</span>
     <h2 class="section-title">My <span>Services</span></h2>
   </div>
 
-  <div class="services-grid">
-    <div class="service-card fade-in">
-      <div class="service-icon">🚀</div>
-      <h3>Growth Marketing</h3>
-      <p>Performance-driven campaigns using data analytics, A/B testing, and funnel optimisation to drive measurable ROI and conversion lifts.</p>
-    </div>
-    <div class="service-card fade-in" style="transition-delay:0.1s">
-      <div class="service-icon">🎯</div>
-      <h3>Brand Strategy</h3>
-      <p>Building cohesive brand narratives that resonate, from go-to-market planning and positioning to compelling storytelling across every touchpoint.</p>
-    </div>
-    <div class="service-card fade-in" style="transition-delay:0.2s">
-      <div class="service-icon">📊</div>
-      <h3>Data & Analytics</h3>
-      <p>Translating complex data into actionable insights using Power BI, KPI dashboards, CTR analysis, and ROI tracking for strategic decision-making.</p>
-    </div>
-    <div class="service-card fade-in" style="transition-delay:0.3s">
-      <div class="service-icon">✍️</div>
-      <h3>Content Strategy</h3>
-      <p>Crafting content that converts, from SEO-driven editorial calendars and lead generation to social campaigns that build organic communities.</p>
-    </div>
-    <div class="service-card fade-in" style="transition-delay:0.4s">
-      <div class="service-icon">🔍</div>
-      <h3>Market Research</h3>
-      <p>Deep-dive consumer insights, competitive benchmarking, and survey research to fuel positioning and identify untapped market opportunities.</p>
-    </div>
-    <div class="service-card fade-in" style="transition-delay:0.5s">
-      <div class="service-icon">🎨</div>
-      <h3>Visual & Design</h3>
-      <p>Creating on-brand visual assets using Canva and Figma, from campaign creatives and infographics to landing pages that drive action.</p>
-    </div>
+ <div class="services-grid">
+  <div class="service-card fade-in">
+    <div class="service-icon">📧</div>
+    <h3>Email & Lifecycle Marketing</h3>
+    <p>Managing lifecycle and email campaigns at scale, using segmentation and A/B testing to keep messaging relevant at every stage of the user journey.</p>
   </div>
+  <div class="service-card fade-in" style="transition-delay:0.1s">
+    <div class="service-icon">🚀</div>
+    <h3>Growth Marketing</h3>
+    <p>Performance-driven campaigns using data analytics, A/B testing, and funnel optimisation to drive measurable ROI and conversion lifts.</p>
+  </div>
+  <div class="service-card fade-in" style="transition-delay:0.2s">
+    <div class="service-icon">🎯</div>
+    <h3>Brand Strategy</h3>
+    <p>Positioning and go-to-market thinking, from competitive benchmarking to recommendations grounded in consumer research.</p>
+  </div>
+  <div class="service-card fade-in" style="transition-delay:0.3s">
+    <div class="service-icon">📊</div>
+    <h3>Data & Analytics</h3>
+    <p>Tracking CTR, open rates, and conversion data to understand what's working in a campaign and where to adjust.</p>
+  </div>
+  <div class="service-card fade-in" style="transition-delay:0.4s">
+    <div class="service-icon">🔍</div>
+    <h3>Market Research</h3>
+    <p>Experienced in designing surveys and analyzing user feedback to identify feature gaps, evaluate software product satisfaction, and launch targeted audience campaigns.</p>
+  </div>
+  <div class="service-card fade-in" style="transition-delay:0.5s">
+    <div class="service-icon">🎨</div>
+    <h3>Visual & Design</h3>
+    <p>Designing campaign creatives and on-brand visual assets in Canva, Adobe and Figma to support marketing and community initiatives.</p>
+  </div>
+</div>
 </section>
 
 <!-- ABOUT -->
@@ -1256,7 +1259,7 @@
 
   <div class="about-content fade-in" style="transition-delay: 0.15s;">
     <span class="section-label">About Me</span>
-    <h2 class="section-title">Someone who's equally <span>comfortable</span> in analytics as in crafting narratives</h2>
+    <h2 class="section-title">A marketing professional focused on both <span>insights and execution.</span></h2>
     <p>I'm a marketing professional and MBA candidate at NMIMS, sharpening my strategic lens while bringing creative execution to every challenge.</p>
     <p>With 2+ years managing end-to-end digital campaigns, I've learned that the best marketing isn't just about visibility rather it's about delivering the right message to the right person at exactly the right moment. I leverage AI tools extensively as part of today's highest-performing marketing workflows.</p>
     <p>Outside the office, I'm a passionate photographer, a hobby that keeps me curious, observant, and endlessly attentive to detail.</p>
@@ -1266,16 +1269,12 @@
         <div class="label">NMIMS, Class of 2027</div>
       </div>
       <div class="highlight-item">
-        <div class="num">2+</div>
+        <div class="num">3+</div>
         <div class="label">Years of Marketing Experience</div>
       </div>
       <div class="highlight-item">
-        <div class="num">900K+</div>
-        <div class="label">Developer Touchpoints Reached</div>
-      </div>
-      <div class="highlight-item">
-        <div class="num">20+</div>
-        <div class="label">Tools Expertise</div>
+        <div class="num">Experienced Professional</div>
+        <div class="label">Managed multi-channel email campaigns and targeted user notifications.</div>
       </div>
     </div>
   </div>
@@ -1396,7 +1395,7 @@
         </li>
         <li>Collaborated cross-functionally with product, design, and engineering teams to ensure on-time campaign delivery; also
         built and maintained client relationships by addressing escalations and improving internal processes.</li>
-        <li>Led the <span class="project-colorbold">Google Gemini AI Lifecycle</span> campaign as Project Head — one of Google’s highest-visibility initiatives. Managed
+        <li>Led the <span class="project-colorbold">Google AI Studio Lifecycle</span> campaign as Project Head — one of Google’s highest-visibility initiatives. Managed
         end-to-end execution across all milestones, coordinated cross-functional stakeholders, and delivered with zero
         escalations.</li>
       </ul>
@@ -1446,7 +1445,13 @@
           <span class="project-tag">Strategy</span>
         </div>
         <h3>Harley-Davidson: Premium Motorcycle Market Study</h3>
-        <p>Full competitive benchmark against Royal Enfield, Triumph-Bajaj, and BMW-TVS. Identified positioning opportunities for affordably-targeted premium motorcycles targeting Gen Z consumers through survey analysis and consumer segmentation.</p>
+        <p>
+          
+         <b>Market Research & Insights</b>: Conducted a comprehensive 5C analysis and consumer surveys to identify mid-range positioning gaps against competitors like Royal Enfield and Triumph.
+        <br><b>MarTech Strategy</b>: Translated Gen Z consumer data into a go-to-market strategy, proposing an affordable motorcycle line with targeted pricing and distribution recommendations.
+
+      </p>
+
       </div>
     </div>
 
@@ -1457,8 +1462,10 @@
           <span class="project-tag">Growth</span>
           <span class="project-tag">Analytics</span>
         </div>
-        <h3>Google Lifecycle Campaign</h3>
-        <p>Orchestrated multi-channel campaigns reaching <span class="project-colorbold">200k+</span> developer touchpoints.</p>
+        <h3>Google AI Studio Lifecycle</h3>
+        <p>Led the Google AI Studio Lifecycle campaign as Project Head, one of Google’s highest-visibility initiatives. Managed
+        end-to-end execution across all milestones, coordinated cross-functional stakeholders, and delivered with zero
+        escalations reaching <span class="project-colorbold">200k+</span> developer touchpoints.</p>
       </div>
     </div>
 
@@ -1469,7 +1476,7 @@
           <span class="project-tag">Brand Strategy</span>
           <span class="project-tag">Go-to-Market</span>
         </div>
-        <h3>NGO Digital Growth — Organic Community Building</h3>
+        <h3>NGO Digital Growth: Organic Community Building</h3>
         <p>Built Aasha Foundation's social presence from the ground up. Designed content frameworks, engagement strategies, and implementation strategies that grew the organic community by <span class="project-colorbold">10%+</span> in under 1 month.</p>
       </div>
     </div>
@@ -1498,23 +1505,23 @@
   <div class="why-content fade-in" style="transition-delay: 0.15s;">
     <span class="section-label">Why Choose Me</span>
     <h2 class="section-title">Why <span>Hire Me?</span></h2>
-    <p>I sit at the rare intersection of analytical rigour and creative storytelling. I don't just report metrics, I design the campaigns that move them. I bring a bias for both artistic narrative and quantified outcomes to every brief.</p>
+    <p>I specialize in leveraging enterprise marketing technology to build, scale, and manage high-volume digital campaigns. With hands-on experience deploying over 300 target lifecycles using advanced tools, I focus on optimizing communication workflows to deliver consistent, measurable project execution.</p>
     <div class="why-stats">
-      <div class="why-stat">
-        <div class="num">900K+</div>
-        <div class="label">Campaigns Reached</div>
+        <div class="why-stat">
+        <div class="num">310</div>
+        <div class="label">Campaigns Executed Successfully</div>
       </div>
       <div class="why-stat">
-        <div class="num">7x</div>
-        <div class="label">Engagement Lift</div>
+        <div class="num">300+</div>
+        <div class="label">Campaigns Deployed</div>
       </div>
       <div class="why-stat">
-        <div class="num">25%</div>
+        <div class="num">5-7%</div>
         <div class="label">Metric Boost</div>
       </div>
       <div class="why-stat">
-        <div class="num">50+</div>
-        <div class="label">Mentored Youth</div>
+        <div class="num">900K+</div>
+        <div class="label">Developers Reached</div>
       </div>
     </div>
     <a href="#banner" class="btn-primary">Hire Me</a>
